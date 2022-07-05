@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Greg's Gambits | About You</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/greg.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Audiowide|Orbitron|Press+Start+2P" rel="stylesheet">
+<meta  charset="utf-8" />
+meta name="author" content="Heather Nicole Smith"/>
+<meta name="date" content="Intermediate Web Programming Course Project" />
+<script>
+function get_name()
+{
+	var name = prompt("Please enter your name"," ");
+  document.getElementById('myname').innerHTML = name;
+}
+function get_username()
+{
+	var username = prompt("What do you want for your username?"," ");
+  document.getElementById('myusername').innerHTML = username;
+}
+function get_avatar()
+{
+	window.open('avatars.html');
+}
+function pick_avatar()
+{
+	var avatar = prompt("Enter the avatar you want","Bunny");
+  document.getElementById('myavatar').innerHTML = avatar;
+}
+</script>
+</head>
+<body>
+<div id="container">
+
+ <img src="images/superhero.jpg" width="120" height="120" class="floatleft" alt="superhero"/>
+ <h1 id="title"><em>Greg's Gambits </em></h1>
+  
+<h2 id="subtitle"><em> TELL GREG ABOUT YOU</em></h2>
+
+<p>&nbsp;</p>
+<div id="nav">
+  <p><a href="index.html">Home</a>
+  <a href="greg.html">About Greg</a>
+  <a href="play_games.html">Play a Game</a>
+  <a href="sign.html">Sign In</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="aboutyou.html">Tell Greg About You</a></p>
+</div>
+<div id="content">
+<p><button type="button" onclick="get_name()">Enter your name </button>
+Hi there, <span  id = "myname" >Greg</span> </p>
+<p><button type="button" onclick="get_username()">Enter a username </button>
+Username: <span  id = "myusername">KingGreg</span> </p>
+<p><button type="button" onclick="get_avatar()">See the avatar choices</button>
+<p><button type="button" onclick="pick_avatar()">Select your avatar</button><br />
+The avatar you selected is: <span  id = "myavatar">kitty</span> </p>
+<p>&nbsp;</p>
+</div>
+<p>&nbsp;</p>
+<div id="footer">
+  <div id="footer">Copyright &copy; 2022 Greg's Gambits<br />
+<a href="mailto:hireme@hnxs.io">HireMe@hnxs.io</a></div>
+</div>
+</div>
+</body>
+</html>
